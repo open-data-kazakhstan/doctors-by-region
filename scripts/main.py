@@ -13,7 +13,7 @@ df = df.set_index('Годы')
 
 
 # Размеры окна графика (в дюймах)
-fig_width, fig_height = 7.8, 9.6
+fig_width, fig_height = 9, 16
 
 
 # Путь к файлу для сохранения видео
@@ -22,13 +22,11 @@ output_file_path = 'arzte_race.mp4'
 # Создание фигуры и оси с заданными размерами
 fig, ax = plt.subplots(figsize=(fig_width, fig_height))
 
-# Установка цвета фона фигуры
-fig.colorbar = ('black')
 
 # Создание bar chart race с определенными параметрами
 bcr.bar_chart_race(
     df=df,  
-    title='Барлық мамандықтағы дәрігерлер саны\nЧисленность врачей всех специальностей',  
+    title='Барлық мамандықтағы дәрігерлер саны                     \nЧисленность врачей всех специальностей                       ',  
     orientation='h',  
     sort='desc',  
     n_bars=15,  
@@ -39,5 +37,8 @@ bcr.bar_chart_race(
     cmap='Pastel1',  
     bar_kwargs={'alpha': 1},  
     filter_column_colors=True,
+    title_size = 30,
+    bar_label_size = 20,
+    tick_label_size = 20
 )
 
