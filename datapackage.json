@@ -1,0 +1,39 @@
+{
+    "name": "Arzte",
+    "title": "Численность врачей всех специальностей",
+    "resources": [
+      {
+        "name": "Arzte-data",
+        "path": "Data/Arzte.csv",
+        "format": "csv",
+        "schema": {
+          "fields": [
+            {"name": "Год", "type": "integer"},
+            {"name": "Акмолинская", "type": "integer"},
+            {"name": "Актюбинская", "type": "integer"},
+            {"name": "Алматинская", "type": "integer"},
+            {"name": "Атырауская", "type": "integer"},
+            {"name": "Западно-Казахстанская", "type": "integer"},
+            {"name": "Жамбылская", "type": "integer"},
+            {"name": "Карагандинская", "type": "integer"},
+            {"name": "Костанайская", "type": "integer"},
+            {"name": "Кызылординская", "type": "integer"},
+            {"name": "Мангыстауская", "type": "integer"},
+            {"name": "Павлодарская", "type": "integer"},
+            {"name": "Северо-Казахстанская", "type": "integer"},
+            {"name": "Восточно-Казахстанская", "type": "integer"},
+            {"name": "г. Астана", "type": "integer"},
+            {"name": "г. Алматы", "type": "integer"}
+          ]
+        }
+      }
+    ],
+    "licenses": [
+      {
+        "name": "CC-BY-SA",
+        "title": "Creative Commons Attribution Share-Alike",
+        "path": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    ]
+  }
+  
